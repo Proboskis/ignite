@@ -29,8 +29,8 @@ const lastYear = `${currentYear - 1}-${currenMount}-${currentDay}`;
 const nextYear = `${currentYear + 1}-${currenMount}-${currentDay}`;
 
 // Popular Games
-export const POPULAR_GAMES_URL = `&dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
+const POPULAR_GAMES_URL = `&dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
 
- const popularGamesUrl = () => `${BASE_URL}${POPULAR_GAMES_URL}`;
+export const popularGamesUrl = () => `${BASE_URL}${POPULAR_GAMES_URL}`;
  //console.log(process.env.REACT_APP_RAWG_API);
  //console.log(popularGamesUrl());
