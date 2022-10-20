@@ -30,7 +30,14 @@ const nextYear = `${currentYear + 1}-${currenMount}-${currentDay}`;
 
 // Popular Games
 const POPULAR_GAMES_URL = `&dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
+const UPCOMING_GAMES = `&dates=${currentDay},${nextYear}&ordering=-added&page_size=10`;
+const NEW_GAMES = `&dates=${currentDay},${currentDate}&ordering=-released&page_size=10`;
 
 export const popularGamesUrl = () => `${BASE_URL}${POPULAR_GAMES_URL}`;
- //console.log(process.env.REACT_APP_RAWG_API);
- //console.log(popularGamesUrl());
+export const upcomingGamesUrl = () => `${BASE_URL}${UPCOMING_GAMES}`;
+export const newGamesUrl = () => `${BASE_URL}${NEW_GAMES};`;
+
+//console.log(process.env.REACT_APP_RAWG_API);
+//console.log(popularGamesUrl());
+//console.log(upcomingGames());
+//console.log(newGames());
