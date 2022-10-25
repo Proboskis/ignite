@@ -11,9 +11,9 @@ export const loadGames = () => async (dispatch) => {
     dispatch({
         type: "FETCH_GAMES",
         payload: {
-            popular: popularGames.data.results,
-            upcoming: upcomingGames.data.results,
-            new: newGames.data.results
+            popularGames: popularGames.data.results,
+            upcomingGames: upcomingGames.data.results,
+            newGames: newGames.data.results
         }
     });
 }
